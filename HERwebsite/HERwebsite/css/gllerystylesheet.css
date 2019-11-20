@@ -1,0 +1,230 @@
+.container {
+    width: 1080px; /* 100px margin left and right */
+    /* you can make it shorter for examle, 960px */
+    margin: 0 auto;
+    /* centering container */
+    
+    /* if you want to use this font to */
+  font-family: 'Open Sans Condensed', sans-serif;
+    
+}
+
+body{
+    background-color:#4d0019;
+    color: white;
+}
+/*--navbar----------------------------*/
+
+.navbar {
+    background-color: #990030;
+}
+
+.navbar ul {
+    padding: 15px;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline;
+    margin: 70px;
+  margin-right: 125px
+}
+.navbar ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: white;
+font-family: 'Open Sans Condensed', sans-serif;
+}
+/* if you want to add hovering effects, check the other video demo */
+.navbar ul li a:hover {
+    color:lightpink;
+}
+/* this nav bar is same is the other video demo 
+check the other video demo if you want to see from the beginning */
+
+
+/*--css-grid----------------------------*/
+
+.grid-container {
+    display: grid;
+    /*An HTML element becomes a grid container by setting the display property to grid or inline-grid.*/
+    
+    grid-template-columns: repeat(, 1fr); 
+    /* total 6  use fr unit */
+    /* The grid-template-columns property defines the number of columns in your grid layout, and it can define the width of each column.
+    
+    this sets size for 3 columns
+    
+    you can use "auto" or "1fr"
+    
+    fr is a unit for css grid
+    
+    repeat(3, 1fr) = 1fr 1fr 1fr
+    
+    you can sue fr unit differently
+    
+    */
+    
+    grid-gap: 20px; /* space between columns and rows*/
+    background-color:#990030;
+    padding: 20px;
+    /* this padding is for contents*/
+}
+
+.grid-container > div {
+    
+    /* CSS selectors ">" and "space"
+    
+    It is time to talk about css selectors
+    I will tell you more in class and answer yur questions. better not to miss the class
+    
+    A > B will only select B that are direct children to A (that is, there are no other elements inbetween).
+    > is the child selector. It specifies only immediate child elements and not any descendant (including grandchildren, grand-grandchildren etc.) as in the second example without the 
+    
+    A B will select any B that are inside A, even if there are other elements between them.
+    */
+
+    background-color:;
+    padding: 20px 0;
+    min-height: 50px;
+    text-align: center;
+    font-size: 30px;
+}
+
+header {
+    background-color: #ffe6ee;
+    padding: 10px;
+    grid-column: 1 / -1;
+    color: #4d0019;
+    /* I will show you how to use css grid-column  */
+    /* check w3schools
+    https://www.w3schools.com/cssref/pr_grid-column.asp*/
+}
+
+footer {
+    text-align: center;
+    background-color: lightgray;
+    padding: 10px;
+    grid-column: 1 / -1;
+    /*check w3schools
+    https://www.w3schools.com/cssref/pr_grid-column.asp*/
+}
+
+.box01 {
+    grid-row: 
+   
+
+    /* to use css grid, you need to use "grid-column" and "grid-row" */
+    
+    /* Make "item01" start on row-line 2 and end on row-line 5: */
+}
+
+.videos {
+    margin-top: 40px;
+
+        
+}
+    
+    
+    /*btw
+    grid-column-start: 2;
+    grid-column-end: 4; 
+    = same as
+    grid-column: 2/4;
+    */
+    
+    /* my mistake there is no 5 in this css grid because it's 3 col grid 
+    3 column grid = max value would be 4
+    */
+    /*Make "item04" start on row-line 2 and end on row-line 5: 
+    column line 4 to 5*/
+}
+
+
+
+
+img {
+    width: 85%; /* same code */
+}
+
+/* styling text */
+
+h1 {
+    font-size: 2em;
+    padding: 20px 10px;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+h2{
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+p {
+    text-align: left;
+    font-size: 14px;
+    line-height: 1.8;
+    padding: 0 20px;
+}
+
+ #gallerywrapper {
+     width:600px;
+     height:400px;
+     margin:0 auto;
+     position:relative;
+     font-family:verdana, arial, sans-serif;
+ } 
+
+ #gallerywrapper #gallery {
+     position:absolute;
+     left:0;
+     top:0;
+     height:450px;
+     width:640px;
+     overflow:hidden;
+     text-align:center;
+ } 
+
+ #gallerywrapper #gallery div {
+     width:640px; height:900px; 
+     padding-top:10px; 
+     position:relative;
+ } 
+
+ #gallerywrapper #gallery div img {
+     clear:both; 
+     display:block; 
+     margin:0 auto; 
+     border:0;
+ } 
+
+ #gallerywrapper #gallery div h3 {
+     padding:10px 0 0 0; 
+     margin:0; 
+     font-size:18px;
+ } 
+
+ #gallerywrapper #gallery div p {
+     padding:5px 0; 
+     margin:0; 
+     font-size:12px; 
+     line-height:18px;
+ } 
+
+ #gallery .previous{ 
+     display:inline;
+     float:left;
+     margin-left:80px;
+     text-decoration:none;
+ } 
+
+ #gallery .next{ 
+     display:inline;
+     float:right;
+     margin-right:80px;
+     text-decoration:none;
+ }
+
+h3{
+    font-family: 'Open Sans Condensed', sans-serif; 
+}
